@@ -1,0 +1,17 @@
+apiVersion: machinelearning.seldon.io/v1
+kind: SeldonDeployment
+metadata:
+  name: mlserver-cross-encoder
+  namespace: seldon
+spec:
+  protocol: v2
+  predictors:
+    - name: default
+      graph:
+        name: cross-encoder
+        type: MODEL
+      componentSpecs:
+        - spec:
+            containers:
+            - name: cross-encoder
+              image: bibekyess/cross_encoder_custom:v1 #FIXME
