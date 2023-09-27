@@ -1,0 +1,7 @@
+{
+    "name": "cross-encoder",
+    "implementation": "custom_runtime.CrossEncoderRuntime",
+    "parameters": {
+        "uri": "../../mlserver_image_build/model/ms-marco-MiniLM-L-6-v2"
+    }
+}
