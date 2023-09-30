@@ -1,0 +1,17 @@
+apiVersion: machinelearning.seldon.io/v1
+kind: SeldonDeployment
+metadata:
+  name: mlflow-model
+  namespace: seldon
+spec:
+  protocol: v2
+  predictors:
+    - name: default
+      graph:
+        name: mlflow-model
+        type: MODEL
+      componentSpecs:
+        - spec:
+            containers:
+              - name: mlflow-model
+                image: <username>/non-reusable-model-server:v1

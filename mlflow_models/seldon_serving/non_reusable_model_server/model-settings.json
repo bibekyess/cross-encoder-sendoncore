@@ -1,0 +1,7 @@
+{
+    "name": "cross_encoder_pyfunc",
+    "implementation": "mlserver_mlflow.MLflowRuntime",
+    "parameters": {
+        "uri": "./model_from_mlflow/cross_encoder_pyfunc"
+    }
+}
