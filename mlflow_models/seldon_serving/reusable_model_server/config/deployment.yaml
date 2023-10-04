@@ -11,7 +11,7 @@ spec:
       graph:
         children: []
         implementation: "CUSTOM_IMPLEMENTATION"
-        modelUri: s3://mlflow/0/d3ac0e6fa8824a2980b8041c05612b66/artifacts/cross_encoder_pyfunc #FIXME
+        modelUri: s3://mlflow/0/testing/artifacts/cross_encoder_pyfunc #FIXME
         envSecretRefName: seldon-rclone-secret
         name: ensemble
       componentSpecs:
